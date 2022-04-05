@@ -15,7 +15,102 @@
 </head>
 
 <body style="background-color:grey;">
-    
+    <h2>Sign-up Form</h2>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="youremail" placeholder="Your email...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="pwd" name="yourpassword" placeholder="Your password...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+                    <label for="myCheck">Male</label>
+                    <input type="checkbox" id="myCheck">
+
+                    <label for="myCheck">Female</label>
+                    <input type="checkbox" id="myCheck">
+
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="datetime-local" name="myDateTimeLocal" id="myDateTimeLocal" />
+                            <br />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <label for="myCheck">News Updates</label>
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+            <p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+            <script>
+                function myFunction() {
+                    // Get the checkbox
+                    var checkBox = document.getElementById("myCheck");
+                    // Get the output text
+                    var text = document.getElementById("text");
+                    // If the checkbox is checked, display the output text
+                    if (checkBox.checked == true) {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                }
+            </script>
+            <div class="row">
+                <input type="reset" value="Clear">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
 
 </body>
 
