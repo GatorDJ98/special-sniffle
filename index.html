@@ -15,10 +15,14 @@
 </head>
 
 <body style="background-color:grey;">
-    <h2>Sign-up Form</h2>
+
+    <!-- Beginning of Form -->
+    <h1 style="text-align:center;">Sign-Up Form</h1>
 
     <div class="container">
         <form action="/action_page.php">
+
+            <!-- First Name Entry -->
             <div class="row">
                 <div class="col-25">
                     <label for="fname">First Name</label>
@@ -27,6 +31,8 @@
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
             </div>
+
+            <!-- Last Name Entry -->
             <div class="row">
                 <div class="col-25">
                     <label for="lname">Last Name</label>
@@ -35,6 +41,8 @@
                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                 </div>
             </div>
+
+            <!-- Email Entry -->
             <div class="row">
                 <div class="col-25">
                     <label for="email">Email</label>
@@ -43,6 +51,8 @@
                     <input type="email" id="email" name="youremail" placeholder="Your email...">
                 </div>
             </div>
+
+            <!-- Password Entry -->
             <div class="row">
                 <div class="col-25">
                     <label for="pwd">Password</label>
@@ -51,6 +61,8 @@
                     <input type="password" id="pwd" name="yourpassword" placeholder="Your password...">
                 </div>
             </div>
+
+            <!-- Country Selector w/ options-->
             <div class="row">
                 <div class="col-25">
                     <label for="country">Country</label>
@@ -62,6 +74,7 @@
           <option value="usa">USA</option>
         </select>
 
+                    <!-- Date of Birth Selector-->
                     <div class="row">
                         <div class="col-75">
                             <label for="myDateTimeLocal">Date of Birth</label>
@@ -70,12 +83,15 @@
                         </div>
                     </div>
 
+                    <!-- Male or Female -->
                     <input type="radio" id="male" name="gender" value="M">   <label for="male">Male</label><br>
 
                     <input type="radio" id="female" name="gender" value="F">   <label for="female">Female</label><br>
 
                 </div>
             </div>
+
+            <!-- Subject Entry Box -->
             <div class="row">
                 <div class="col-25">
                     <label for="subject">Subject</label>
@@ -84,11 +100,14 @@
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                 </div>
             </div>
+
+            <!-- News Updates Checkbox-->
             <label for="myCheck">News Updates</label>
             <input type="checkbox" id="myCheck" onclick="myFunction()">
 
             <p id="text" style="display:none">You will be signed up to receive news updates.</p>
 
+            <!-- Script for News Updates Checkbox -->
             <script>
                 function myFunction() {
                     // Get the checkbox
@@ -106,6 +125,8 @@
                     }
                 }
             </script>
+
+            <!-- Clear/Submit Buttons -->
             <div class="row">
                 <input type="reset" value="Clear">
                 <input type="submit" value="Submit">
