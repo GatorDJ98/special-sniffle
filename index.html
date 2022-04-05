@@ -62,18 +62,17 @@
           <option value="usa">USA</option>
         </select>
 
-                    <label for="myCheck">Male</label>
-                    <input type="checkbox" id="myCheck">
-
-                    <label for="myCheck">Female</label>
-                    <input type="checkbox" id="myCheck">
-
                     <div class="row">
                         <div class="col-75">
+                            <label for="myDateTimeLocal">Date of Birth</label>
                             <input type="datetime-local" name="myDateTimeLocal" id="myDateTimeLocal" />
                             <br />
                         </div>
                     </div>
+
+                    <input type="radio" id="male" name="gender" value="M">   <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="F">   <label for="female">Female</label><br>
 
                 </div>
             </div>
@@ -88,13 +87,16 @@
             <label for="myCheck">News Updates</label>
             <input type="checkbox" id="myCheck" onclick="myFunction()">
 
-            <p id="text" style="display:none">Checkbox is CHECKED!</p>
+            <p id="text" style="display:none">You will be signed up to receive news updates.</p>
 
             <script>
                 function myFunction() {
                     // Get the checkbox
                     var checkBox = document.getElementById("myCheck");
                     // Get the output text
+
+                    console.log(checkBox.checked);
+
                     var text = document.getElementById("text");
                     // If the checkbox is checked, display the output text
                     if (checkBox.checked == true) {
