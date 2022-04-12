@@ -116,62 +116,62 @@
 
                     </div>
                 </div>
-
-                <!-- Subject Entry Box -->
-                <div class="row">
-                    <div class="col-25">
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    </div>
-                </div>
-
-                <!-- News Updates Checkbox-->
-                <label for="myCheck">News Updates</label>
-                <input type="checkbox" id="myCheck" onclick="myFunction()">
-
-                <p id="text" style="display:none">You will be signed up to receive news updates.</p>
-
-                <!-- Script for News Updates Checkbox -->
-                <script>
-                    function myFunction() {
-                        // Get the checkbox
-                        var checkBox = document.getElementById("myCheck");
-                        // Get the output text
-
-                        console.log(checkBox.checked);
-
-                        var text = document.getElementById("text");
-                        // If the checkbox is checked, display the output text
-                        if (checkBox.checked == true) {
-                            text.style.display = "block";
-                        } else {
-                            text.style.display = "none";
-                        }
-                    }
-                </script>
-
-                <!-- Clear/Submit Buttons -->
-                <div class="row">
-                    <input type="reset" value="Clear">
-                    <input type="submit" value="Submit">
-                </div>
-        </form>
-        </div>
-
-        <footer class="bg-light text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <a class="text-dark" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fgatordj98.github.io%2Fspecial-sniffle%2F">Validity Checker</a>
             </div>
-            <!-- Copyright -->
-        </footer>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-        <script src="scripts/scripts.js"></script>
+            <!-- Subject Entry Box -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <!-- News Updates Checkbox-->
+            <label for="myCheck">News Updates</label>
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+            <p id="text" style="display:none">You will be signed up to receive news updates.</p>
+
+            <!-- Script for News Updates Checkbox -->
+            <script>
+                function myFunction() {
+                    // Get the checkbox
+                    var checkBox = document.getElementById("myCheck");
+                    // Get the output text
+
+                    console.log(checkBox.checked);
+
+                    var text = document.getElementById("text");
+                    // If the checkbox is checked, display the output text
+                    if (checkBox.checked == true) {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                }
+            </script>
+
+            <!-- Clear/Submit Buttons -->
+            <div class="row">
+                <input type="reset" value="Clear">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-dark" href="https://mdbootstrap.com/">Validity Checker</a>
+        </div>
+    </footer>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="scripts/scripts.js"></script>
 
 </body>
 
